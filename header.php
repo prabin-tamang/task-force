@@ -220,7 +220,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 								<div class="tf-col div col-lg-4 d-flex justify-content-center"><img src="<?php echo get_template_directory_uri(). '/images/doc.png'?>"><h4 class="tf-heading">Task force Tasks</h4></div>
 
-								<div class="tf-col div col-lg-4 d-flex justify-content-center"><img src="<?php echo get_template_directory_uri(). '/images/promotion.png'?>"><h4 class="tf-heading">Task force News</h4></div>
+								<div class="tf-col div col-lg-4 d-flex"><img src="<?php echo get_template_directory_uri(). '/images/promotion.png'?>"><h4 class="tf-heading">Task force News</h4></div>
 
 						</div>
 					
