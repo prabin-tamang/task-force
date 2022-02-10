@@ -550,7 +550,10 @@ header{
                     position:absolute;
                     top:0;
                     left:0;
-                    background: linear-gradient(to right, rgba(255,255,255,1) 15%,rgba(255,255,255,0) 50%);
+                      background: linear-gradient(to right, rgba(255,255,255,1) 15%,rgba(255,255,255,0) 50%);
+                    @include desktop{
+                      background: linear-gradient(to right, rgba(255,255,255,1) 15%,rgba(255,255,255,0) 50%);
+                    }
                     height:100%;
                     }
                     &::before{
@@ -561,7 +564,10 @@ header{
                             left: 0;
                             content: '';
                             position: absolute;
-                            width: 98.4%;
+                            width: 95.4%;
+                            @include tablet{
+                               width: 98.4%;
+                            }
                     }
                 }
                  .carousel-controls{
@@ -575,10 +581,13 @@ header{
             }
             .carousel-control-next{
                 position: absolute;
-                right: 0;
+                right: 20px;
                 bottom: 10px;
                 align-items: end;
                 width: 5%;
+                @include tablet{
+                  right: 0px;
+                }
             }
         }
     }
