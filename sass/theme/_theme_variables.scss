@@ -1,0 +1,50 @@
+$primary: #fff; 
+$blue:#0788b5;
+$green : #1da850;
+$grey:#f2f2f2;
+
+/*******************************************************
+  Break Points for Responsiveness (Mixins)
+********************************************************/
+
+@mixin phone {
+	@media screen and (min-width: 480px) {
+		@content;
+	}
+}
+
+@mixin tablet {
+	@media screen and (min-width: 768px) {
+		@content;
+	}
+}
+
+@mixin laptop {
+	@media screen and (min-width: 1024px) {
+		@content;
+	}
+}
+
+@mixin desktop {
+	@media screen and (min-width: 1304px) {
+		@content;
+	}
+}
+
+@mixin lg {
+	@media screen and (min-width: 1824px) {
+		@content;
+	}
+}
+
+@mixin xlg {
+	@media screen and (min-width: 2524px) {
+		@content;
+	}
+}
+
+@mixin rwd($screen) {
+	@media (min-width: $screen+'px') {
+		@content;
+	}
+}
